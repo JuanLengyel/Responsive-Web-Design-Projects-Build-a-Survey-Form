@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A proyect page with a survey form about page suggestions for the freeCodeCamp Responsive Web Page - Survey Page Challenge">
+    <meta name="keywords" content="freeCodeCamp, challenge, survey">
+    <title>Survey Form suggestions</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <div id="survey_head">
+        <h1 id="title">Your suggestions for my page!</h1>
+        <p id="description">This is my survey form project webpage. Any suggestions you can give will be greatly appreciated!</p>
+    </div>
+
+    <form id="survey-form" method="GET" action="/submit-survey-form">
+        <div id="survey">
+            <div class="survey-label" id="name-label-text">
+                <label id="name-label" for="name">Name:</label>
+            </div>
+            <div class="survey-field" id="name-field">
+                <input id="name" type="text" placeholder="Your full name" required>
+            </div>
+
+            <div class="survey-label" id="email-label-text">
+                <label id="email-label" for="email">Email:</label>
+            </div>
+            <div class="survey-field" id="email-field">
+                <input id="email" type="email" placeholder="i.e. mypersonalemail@mydomain.com" required>
+            </div>
+    
+            <div class="survey-label" id="number-label-text">
+                <label id="number-label" for="number">Age:</label>
+            </div>
+            <div class="survey-field" id="number-field">
+                <input id="number" type="number" min="10" max="99" placeholder="Your Age" required>
+            </div>
+    
+            <div class="survey-label" id="dropdown-label">
+                <label id="dropdown-label-text" for="dropdown">Your tech skill level:</label>
+            </div>
+            <div class="survey-field" id="dropdown-field">
+                <select id="dropdown" name="currentTechSkill" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="basic">Basic</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="survey-label" id="radio-label">
+                <label id="radio-label-text" for="radio">Current insight of survey:</label>
+            </div>
+            <div class="survey-field" id="radio-field">
+                <ul class="radio" style="list-style: none; padding-left: 0px;">
+                    <li class="radio"><input name="radio-buttons" value="1" type="radio" class="radio"><label>Amazing</label></li>
+                    <li class="radio"><input name="radio-buttons" value="2" type="radio" class="radio"><label>Good</label></li>
+                    <li class="radio"><input name="radio-buttons" value="3" type="radio" class="radio"><label>Poor</label></li>
+                </ul>
+            </div>
+
+            <div class="survey-label" id="checkbox-label">
+                <label id="checkbox-label-text" for="checkbox">What should I improve abot the survey:</label>
+            </div>
+            <div class="survey-field" id="checkbox-field">
+                <ul class="checkbox" style="list-style: none; padding-left: 0px;">
+                    <li class="checkbox"><input name="checkbox-buttons" value="1" type="checkbox" class="checkbox"><label>Styling</label></li>
+                    <li class="checkbox"><input name="checkbox-buttons" value="2" type="checkbox" class="checkbox"><label>Color</label></li>
+                    <li class="checkbox"><input name="checkbox-buttons" value="3" type="checkbox" class="checkbox"><label>Layout</label></li>
+                    <li class="checkbox"><input name="checkbox-buttons" value="4" type="checkbox" class="checkbox"><label>Background</label></li>
+                    <li class="checkbox"><input name="checkbox-buttons" value="5" type="checkbox" class="checkbox"><label>Other (Add in comment)</label></li>
+                </ul>
+            </div>
+
+            <div class="survey-label" id="comments-label">
+                <label id="comments-label-text" for="comment">Any additional comments to add:</label>
+            </div>
+            <div class="survey-field" id="comments-field">
+                <textarea id="comment" name="commet" placeholder="Place any comments you want in here..."></textarea>
+            </div>
+        </div>
+
+        <div id="submit-buttom-space">
+            <input id="submit" type="submit">
+        </div>
+    </form>
+    
+</body>
+</html>
